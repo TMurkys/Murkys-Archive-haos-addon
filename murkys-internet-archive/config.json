@@ -1,0 +1,36 @@
+{
+  "name": "Murkys Internet Archive",
+  "version": "1.0.0",
+  "slug": "murkys-internet-archive",
+  "description": "A dark fantasy personal archive for saved websites and references.",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "host_network": false,
+  "ports": {
+    "8099/tcp": 8099
+  },
+  "ports_description": {
+    "8099/tcp": "Web UI"
+  },
+  "map": [
+    "config:rw",
+    "ssl:ro",
+    "addons:ro",
+    "backup:ro"
+  ],
+  "options": {
+    "port": 8099,
+    "data_dir": "/data"
+  },
+  "schema": {
+    "port": "int(1,65535)?",
+    "data_dir": "str?"
+  },
+  "hassio_api": false,
+  "hassio_role": "default",
+  "panel_icon": "mdi:archive-outline",
+  "panel_title": "Internet Archive",
+  "init": false,
+  "homeassistant": "0.110.0"
+}

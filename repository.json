@@ -1,0 +1,6 @@
+{
+  "name": "Murkys Home Assistant Add-ons",
+  "url": "https://github.com/yourusername/ha-murkys-archive",
+  "maintainer": "Murkys <you@example.com>",
+  "categories": ["media", "utilities", "networking"]
+}
