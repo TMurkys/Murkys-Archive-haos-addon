@@ -1057,8 +1057,9 @@ body {
 }
 
 @media (max-width: 640px) {
-  html, body {
-    overflow: visible;
+  html, body, #root {
+    overflow-x: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     min-height: 100%;
     height: auto;
@@ -1146,7 +1147,7 @@ body {
   }
 
   .hero-stats {
-    width: 100%;
+    width: 100% !important;
     max-width: none;
     min-width: 0;
     margin-left: 0;
@@ -1155,7 +1156,7 @@ body {
   }
 
   .graph-card {
-    width: 100%;
+    width: 100% !important;
   }
 
   .stat-box {
