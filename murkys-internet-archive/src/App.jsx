@@ -348,7 +348,7 @@ function App() {
         {activeView === 'Overview' && (
           <section className="hero-panel panel">
             <div className="hero-copy">
-              <h1>Murkys Internet Archive.</h1>
+              <h1>MIA.</h1>
               <div className="archive-meta">
                 <span className="archive-count">{archiveCount}</span>
                 <span className="archive-count-label">entries saved</span>
