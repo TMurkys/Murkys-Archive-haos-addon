@@ -1033,7 +1033,17 @@ body {
   .hero-stats,
   .overview-carousel {
     width: 100%;
+    max-width: none;
     margin-left: 0;
+  }
+
+  .hero-stats {
+    display: block;
+  }
+
+  .graph-card {
+    width: 100% !important;
+    max-width: none;
   }
 
   .catalog-grid {
@@ -1151,13 +1161,16 @@ body {
     width: 100% !important;
     max-width: none;
     min-width: 0;
+    display: block;
     margin-left: 0;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 8px;
   }
 
   .graph-card {
     width: 100% !important;
+    max-width: none;
+    min-width: 0;
   }
 
   .stat-box {
