@@ -1,6 +1,6 @@
 {
   "name": "Murkys Internet Archive",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "slug": "murkys-internet-archive",
   "description": "A dark fantasy personal archive for saved websites and references.",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
