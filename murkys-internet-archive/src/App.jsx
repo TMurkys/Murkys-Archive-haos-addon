@@ -464,8 +464,6 @@ function App() {
                     >
                       <div className="card-topline">
                         <span className="card-icon">{item.icon || '✦'}</span>
-                        <span className="card-tag">{item.category}</span>
-                        <span className="card-rarity">{item.rarity}</span>
                       </div>
 
                       <h3>{item.name}</h3>
@@ -490,7 +488,6 @@ function App() {
                     <>
                       <div className="detail-header">
                         <span className="detail-rarity">Editing</span>
-                        <span className="detail-category">Website</span>
                       </div>
 
                       <h3>Edit {selectedItem.name}</h3>
@@ -550,8 +547,7 @@ function App() {
                   ) : (
                     <>
                       <div className="detail-header">
-                        <span className="detail-rarity">{selectedItem.rarity}</span>
-                        <span className="detail-category">{selectedItem.category}</span>
+                        <span className="detail-rarity">Saved</span>
                       </div>
 
                       <h3>{selectedItem.name}</h3>
