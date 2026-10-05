@@ -407,9 +407,9 @@ function App() {
               </div>
 
               <div className="overview-carousel-window">
-                <div className="overview-carousel-track">
-                  {overviewItems.length > 0 ? (
-                    overviewItems.map((item, index) => (
+                {overviewItems.length > 0 && (
+                  <div className="overview-carousel-track">
+                    {overviewItems.map((item, index) => (
                       <div
                         key={`${item.id}-${index}`}
                         className="overview-slide"
@@ -422,13 +422,9 @@ function App() {
                           {item.icon || '✦'} {item.name}
                         </span>
                       </div>
-                    ))
-                  ) : (
-                    <div className="overview-slide empty">
-                      <span>Nothing saved yet</span>
-                    </div>
-                  )}
-                </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </section>
