@@ -1058,11 +1058,14 @@ body {
 
 @media (max-width: 640px) {
   html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: visible;
     -webkit-overflow-scrolling: touch;
     min-height: 100%;
     height: auto;
+  }
+
+  body {
+    overscroll-behavior: auto;
   }
 
   .page-shell {
@@ -1103,6 +1106,7 @@ body {
 
   .dashboard {
     overflow: visible;
+    height: auto;
     gap: 14px;
     padding-right: 0;
   }
@@ -1144,9 +1148,14 @@ body {
   .hero-stats {
     width: 100%;
     max-width: none;
+    min-width: 0;
     margin-left: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+  }
+
+  .graph-card {
+    width: 100%;
   }
 
   .stat-box {
